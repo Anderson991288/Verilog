@@ -1,5 +1,5 @@
-# Verilog
-## voter
+
+# voter
 ![IMG_2842](https://user-images.githubusercontent.com/68816726/180979041-2090ae53-308a-476b-a93a-918dead1454a.jpeg)
 
 ### verilog file:
