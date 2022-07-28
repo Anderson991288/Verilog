@@ -1,0 +1,3 @@
+# 程式設計:
+
+## 1.建一個.v檔，左邊Project Manager下， 點選Add Source
