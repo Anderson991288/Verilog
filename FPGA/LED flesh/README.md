@@ -140,7 +140,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk]
 
 ![123456](https://user-images.githubusercontent.com/68816726/181573944-18ca4e02-fbe7-4f5b-85d8-d044603bfb9d.png)
 
-### 20.下載完成後可以看到2顆LED開始閃爍
+### 20.下載完成後可以看到座左下2顆LED開始閃爍
 
 ![AnyConv com__IMG_0114](https://user-images.githubusercontent.com/68816726/181575235-21f1ee4c-768a-46d3-b9bb-316d8b916f3a.jpg)
 
