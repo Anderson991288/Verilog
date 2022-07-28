@@ -87,6 +87,61 @@ input wire clk ,//System differential clock
 endmodule
 ```
 
+### 10.先創建一個.xdc的約束檔，左側Project Manager下，點選Add Source
 
+![1111](https://user-images.githubusercontent.com/68816726/181569691-2e8979fa-0fc1-4eec-9eaa-70243006396d.png)
+
+### 11.點選Create File，在file name輸入top_pin，點選 OK
+
+![222](https://user-images.githubusercontent.com/68816726/181570109-5c2512b8-56f7-4140-9ac0-6335e11e04c4.png)
+
+### 12.點選Finish，完成約束檔的創建
+
+![3333](https://user-images.githubusercontent.com/68816726/181570451-29090e3e-6741-4f97-9c96-1a974c86229f.png)
+
+
+### 13.建好之後，在約束檔組下有個top_pin.xdc
+
+![4444](https://user-images.githubusercontent.com/68816726/181570825-1d966d4c-1564-486b-82a7-6f3306d96067.png)
+
+### 14.點開top_pin.xdc並編輯，程式碼如下
+
+```
+############## clock define##################
+create_clock -period 20.000 [get_ports clk]
+set_property PACKAGE_PIN N18 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+############## key define##################
+set_property PACKAGE_PIN P16 [get_ports rst_n]
+set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
+##############LED define##################
+set_property PACKAGE_PIN P15 [get_ports {led[0]}]
+set_property PACKAGE_PIN U12 [get_ports {led[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[*]}]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+```
+
+### 15.編輯完Ctrl+S存檔
+
+### 16.依序點選 1 Run synthesized，2 Run Implementation，3 Generate Bitstream
+
+![123](https://user-images.githubusercontent.com/68816726/181572115-32bf372c-ce35-4ff6-84e0-a8401794d8cd.png)
+
+### 17.完成後，點選Open Hardware Manager
+
+![1234](https://user-images.githubusercontent.com/68816726/181572816-3c90f1ca-3eff-49f5-895b-6b40bc6c1194.png)
+
+### 18.將版子接上電腦，點選Open target， 然後點選Auto Connect
+
+![12345](https://user-images.githubusercontent.com/68816726/181573438-82485b83-cee0-45c9-902b-34376936054d.png)
+
+### 19.點選Program device，下载程式，彈出視窗，點選Program
+
+![123456](https://user-images.githubusercontent.com/68816726/181573944-18ca4e02-fbe7-4f5b-85d8-d044603bfb9d.png)
+
+### 20.下载完成後可以看到2顆LED開始閃爍
+
+![AnyConv com__IMG_0114](https://user-images.githubusercontent.com/68816726/181575235-21f1ee4c-768a-46d3-b9bb-316d8b916f3a.jpg)
 
 
