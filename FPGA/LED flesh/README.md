@@ -35,27 +35,6 @@
 ### 9.程式碼如下
 
 ```
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 07/28/2022 11:23:10 AM
-// Design Name: 
-// Module Name: led_flash
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 module led_flash(
 input wire clk ,//System differential clock
  input wire rst_n ,//system reset
