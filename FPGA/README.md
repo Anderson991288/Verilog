@@ -34,3 +34,8 @@
 ![8](https://user-images.githubusercontent.com/68816726/181543980-c8ac9698-97e0-45e9-9418-1f298f7356d9.png)
 
 
+[Z7-LITE_Rev1_1.pdf](https://github.com/Anderson991288/Verilog/files/9226667/Z7-LITE_Rev1_1.pdf)
+
+[ug865-Zynq-7000-Pkg-Pinout.pdf](https://github.com/Anderson991288/Verilog/files/9226668/ug865-Zynq-7000-Pkg-Pinout.pdf)
+
+
