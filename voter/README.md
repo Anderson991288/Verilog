@@ -21,6 +21,7 @@ module voter (
 endmodule
 ```
 voter_tb.v
+
 testbench file:
 ```
 //Testbench for voter
