@@ -20,6 +20,7 @@ module voter (
 	
 endmodule
 ```
+voter_tb.v
 testbench file:
 ```
 //Testbench for voter
@@ -55,5 +56,11 @@ module test;
 
 endmodule
 ```
+### 1.在終端機中，輸入：
+```
+iverilog voter.v voter_tb.v
+vvp a.out
+```
+### 2.執行完後會在資料夾中看到" voter_tb.vcd "這個檔案，右鍵選擇選擇"Open with GTKWave"
 
 ![Screenshot from 2022-07-26 18-04-57](https://user-images.githubusercontent.com/68816726/180980766-9f3b6a85-5417-4851-bb76-357e718ea304.png)
