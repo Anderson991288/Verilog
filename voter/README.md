@@ -64,6 +64,7 @@ vvp a.out
 ```
 ### 2.執行完後會在資料夾中看到" voter_tb.vcd "這個檔案，右鍵選擇選擇"Open with GTKWave"
 
-### 3.左上方點開test，點uut
+### 3.左上方點開test，點uut，左下方四個全選，再點Append
+
 ![Screenshot from 2022-07-26 18-04-57](https://user-images.githubusercontent.com/68816726/180980766-9f3b6a85-5417-4851-bb76-357e718ea304.png)
 
