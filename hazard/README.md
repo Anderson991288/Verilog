@@ -160,6 +160,6 @@ vvp a.out
 ```
 ### 2.執行完後會在資料夾中看到" hazard_tb.vcd "這個檔案，右鍵選擇選擇"Open with GTKWave"
 
-### 3.左上方點開test，點uut，左下方四個全選，再點Append
+### 3.左上方點開test，點uut1/uut2，左下方四個全選，再點Append
 
 ![Screenshot from 2022-08-09 22-19-55](https://user-images.githubusercontent.com/68816726/183674074-c4f73e26-9a7b-4f1a-b0e1-022dfbf96dd9.png)
