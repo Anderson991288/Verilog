@@ -1,5 +1,15 @@
 ## Alarm
 
+###  wire:
+  * wire 是連接硬體元件的連接線
+  * wire 內定為一個位元的值，
+   
+   eg:
+   
+     ```
+     wire b,c; //宣告兩條接線
+     ```
+     
 alarm.v
 ```
 module alarm(
