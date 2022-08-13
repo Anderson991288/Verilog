@@ -21,6 +21,31 @@
     * 當a或者是b有變化時，才會去做always block裡的變化 
     * always@(a or b) 寫法等同於 always@(a , b)，也可以直接寫always@(＊) 
 
+### if else:
+  * 根據判斷式的先後順序有優先權的不同，以下面的例子就是reset >判斷條件1>判斷條件2>．．．．>判斷條件n
+  ```
+  always@(posedge clk)begin
+  if(reset)begin
+
+  end
+  else if(判斷條件 1)begin
+    敘述1
+  end
+  else if(判斷條件 2)begin
+    敘述2
+  end
+      .
+      .
+      .
+      .
+      .
+      .
+  else begin
+    敘述n
+  end
+end
+  ```
+
 alarm.v
 ```
 module alarm(
