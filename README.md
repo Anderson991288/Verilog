@@ -34,7 +34,7 @@ sudo apt install gtkwave
   * 要求指定的訊號線要做什麼運算
     eg:
     ```
-    assign “temp1 = a & b;
+    assign temp1 = a & b;
     ```
     把a and b 的結果指定給 temp1，這邊要注意的是指定的對象必須宣告為wire的形式．       
      
