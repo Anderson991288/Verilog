@@ -9,7 +9,12 @@ sudo apt install iverilog
 sudo apt update
 sudo apt install gtkwave
 ```
+### module：
+   * verilog起始宣告的關鍵字，接著後面的括弧裡面放input,output
+   * 最後面要加endmodule
 
+### input output：
+   * 輸入輸出腳位
 
 ###  wire:
   * wire 是連接硬體元件的連接線
