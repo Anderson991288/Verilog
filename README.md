@@ -20,7 +20,7 @@ sudo apt install gtkwave
   * wire 是連接硬體元件的連接線
   * wire 內定為一個位元的值，
    
-   eg:
+    eg:
    
      ```
      wire b,c; //宣告兩條接線
@@ -29,7 +29,14 @@ sudo apt install gtkwave
   * reg的功能和變數很像，可以直接給定一個數值
   * 主要的功能為保持住電路中某個值
   * 內定值為x(don't care)
-        
+  * reg[7:0] A => 宣告一個名字為A的8bits的暫存器．
+### assign：
+  * 要求指定的訊號線要做什麼運算
+    eg:
+    ```
+    assign “temp1 = a & b;
+    ```
+    把a and b 的結果指定給 temp1，這邊要注意的是指定的對象必須宣告為wire的形式．       
      
 ### always block:
   * always裡面的變數必須是宣告成reg的形式
