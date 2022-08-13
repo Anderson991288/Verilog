@@ -11,13 +11,6 @@ module alarm(
                          * assigned from an 'always' block. */
     );
 
-  /* The function is described in a procedural block using 'if-else'
-   * statements. The sensitivity list "@(*)" automatically includes all
-   * the signals in the block which is the right way to describe a
-   * combinational operation, so it is called "combinational sensitivity
-   * list". This way we can avoid to forget any of the involved signals.
-   * The equivalent sensitivity list in this case is
-   * "@(engine, door, lights). */
 
     always @(*)
         if (engine == 1 && door == 1)
@@ -41,9 +34,7 @@ module test();
     wire siren;
 
     // Unit Under Test (UUT) instance
-    /* It is good practice to use a line of code for every connected signal.
-     * This way it is easier to check if all the signal of the module have been
-     * connected, and to add or remove signal in the future if needed. */
+
     alarm uut (
         .door(door),
         .engine(engine),
@@ -63,10 +54,7 @@ module test();
         $dumpvars(0,test);
 
         // Circuit test
-        /* We change the input signals so that the circuit should activate
-         * the alarm (the siren rings). We test the cases of interest:
-         *   - door open with engine on,
-         *   - door open with engine off and lights on. */
+
 
         // Door open and engine on
         #10 engine = 1;     // start engine
