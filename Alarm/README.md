@@ -82,6 +82,8 @@ endmodule // test
 iverilog alarm_tb.v alarm.v
 vvp a.out
 ```
+
+
 ### 2.執行完後會在資料夾中看到" alarm_tb.vcd "這個檔案，右鍵選擇選擇"Open with GTKWave"
 
 ### 3.左上方點開test，點uut，左下方四個全選，再點Append
