@@ -24,9 +24,8 @@ module srff (
             endcase
 endmodule // srff
 
-//////////////////////////////////////////////////////////////////////////
-// JK flip-flop                                                         //
-//////////////////////////////////////////////////////////////////////////
+// JK flip-flop //
+
 
 module jkff (
     input wire clk, // clock
@@ -50,9 +49,8 @@ module jkff (
             endcase
 endmodule // jkff
 
-//////////////////////////////////////////////////////////////////////////
-// D flip-flop                                                          //
-//////////////////////////////////////////////////////////////////////////
+// D flip-flop //
+
 
 module dff (
     input wire clk, // clock
@@ -71,9 +69,9 @@ module dff (
             q <= d;
 endmodule // dff
 
-//////////////////////////////////////////////////////////////////////////
-// T flip-flop                                                          //
-//////////////////////////////////////////////////////////////////////////
+
+// T flip-flop //
+
 
 module tff(
     input wire clk, // clock
@@ -134,10 +132,7 @@ module test ();
     end
 
     // Asynchronous clear and preset control
-    /* fork-join delimited blocks are similar to begin-end blocks, but make
-     * all the statements in the process to execute concurrently. Thus, delay
-     * times in the process are relative to the process start not to the
-     * previous delay. */
+  
     initial fork
         #5   cl = 0;
         #20  cl = 1;
