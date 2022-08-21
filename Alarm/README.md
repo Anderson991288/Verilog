@@ -10,6 +10,8 @@ module alarm(
                         /* The output is declared as 'reg' because it will be
                          * assigned from an 'always' block. */
     );
+    
+    
 
 
     always @(*)
