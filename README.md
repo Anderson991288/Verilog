@@ -25,6 +25,7 @@ sudo apt install gtkwave
      ```
      wire b,c; //宣告兩條接線
      ```
+     
 ###  reg:
   * reg的功能和變數很像，可以直接給定一個數值
   * 主要的功能為保持住電路中某個值
